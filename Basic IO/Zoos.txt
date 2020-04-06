@@ -1,0 +1,67 @@
+import java.io.*;
+import java.util.*;
+
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+       
+        Scanner in = new Scanner(System.in);
+        String s = in.next();
+        String s1="";
+        String s2="";   
+        int x=0;              
+        int l=s.length();
+        if(l<=20)
+        {
+            x=s.indexOf('o');
+            s1=s.substring(0,x);
+            s2=s.substring(x,l);
+            int l2=s1.length();
+            int l3=s2.length();
+            if(l2*2==l3)
+            {
+                System.out.println("Yes");
+            }
+            else
+            {
+                System.out.println("No");
+            }
+
+        }
+    }
+}
+
+
+
+OR
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+       
+        Scanner in = new Scanner(System.in);
+        String s = in.next();
+        String s1="";
+        String s2="";   
+        int x=0;              
+        int l=s.length();
+        if(l<=20)
+        {
+            x=s.indexOf('o');
+            s1=s.substring(0,x);
+            s2=s.substring(x,l);
+            int l2=s1.length();
+            int l3=s2.length();
+            String s4=l2*2==l3? "Yes":"No";
+            System.out.println(s4);
+
+        }
+    }
+}
+
