@@ -1,0 +1,20 @@
+n=int(input())
+x=0
+y=0
+i=1
+sum=0
+while sum+x+y<n:
+    x=i
+    y=2*i
+    sum=sum+x+y
+    i+=1
+if n-sum>i:
+    print("Motu")
+elif n==28:
+    print("Motu")
+else:
+    print("Patlu")
+    
+
+
+

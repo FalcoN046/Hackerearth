@@ -1,0 +1,15 @@
+N = int(input())
+s=0
+k=0
+l=[]
+data = [int(x) for x in input().split()]
+for i in data:
+    k=i%10
+    l.append(k)
+    
+s = [str(i) for i in l]
+res = int("".join(s))
+if( res % 10==0):
+    print("Yes")
+else :
+    print("No")
